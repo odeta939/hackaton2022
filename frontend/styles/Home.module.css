@@ -1,16 +1,39 @@
-.container {
-  padding: 0 2rem;
-}
-
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+  min-height: 100%;
+  padding: 88px 12px 0;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 88px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-block: 12px;
+  z-index: 100;
+
+}
+
+.icon {
+  height: 100%;
+}
+
+.menu {
+  display: flex;
+  gap: 22px;
+  align-items: flex-end;
+  font-size: 24px;
+  line-height: 30px;
+}
+
 
 .footer {
   display: flex;
@@ -116,13 +139,16 @@
 }
 
 @media (prefers-color-scheme: dark) {
+
   .card,
   .footer {
     border-color: #222;
   }
+
   .code {
     background: #111;
   }
+
   .logo img {
     filter: invert(1);
   }
